@@ -59,7 +59,8 @@ app.post("/", (req,res)=>{
             if(logindata[inputusername] == inputpassword){
                 console.log(`auth $logindata[inputusername]`);
                 if(!req.session.logined) 
-                res.render("main",{data:inputusername});
+                //res.render("main",{data:inputusername});
+                res.send("hello world");
 
             }else if(!logindata[inputusername] ){
                 console.log("no user");               
