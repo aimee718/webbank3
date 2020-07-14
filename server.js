@@ -6,7 +6,7 @@ Prof. George Tsang
 07-14-2020
 */ 
 //==============================Connect to Server==========================================
-const HTTP_PORT= process.env.PORT || 30695;
+const HTTP_PORT= process.env.PORT || 3000;
 const course=require("./user.json");
 const express= require("express");
 const exphbs= require('express-handlebars');
