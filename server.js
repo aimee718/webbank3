@@ -1,6 +1,6 @@
 /*
 WEB322N1A: Assignment 2- Web Bank 2
-Heroku website URL: https://web-bank-2.herokuapp.com/
+Heroku website URL: https://webbank-2.herokuapp.com/
 Eun Kyung (Aimee) Lee
 Prof. George Tsang
 07-14-2020
