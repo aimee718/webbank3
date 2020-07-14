@@ -38,13 +38,13 @@ app.use(session({
   saveUninitialized: true,
   store: new FileStore()
 }));
-
+let inputusername;
 //==============================Login=============================================
 app.get('/', (req,res)=>{
     res.render('index');
 });
 app.post("/", (req,res)=>{
-    let inputusername= req.body.txtUserName;
+    inputusername= req.body.txtUserName;
     let inputpassword= req.body.txtPassword;
     let result= "invalid";
     let fs=require("fs");
@@ -239,7 +239,7 @@ app.post("/l",(req,res)=>{
  });
 //==============================Cancel==========================================
 app.post("/c", (req,res)=>{
-    res.render('main');
+    res.render('main',{data:inputusername});
 });
 //==============================================================================
 const server= app.listen(HTTP_PORT, ()=>{
