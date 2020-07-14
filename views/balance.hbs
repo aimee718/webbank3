@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta gttp-equiv="X-UA-Compatible" content="IE=edge"/>  
+      <title>Web Bank</title>
+      <link rel="stylesheet" type="text/css" href="./css/bankStyle.css" />
+      <script type="text/javascript" src="./js/banking.js"></script>
+    </head>
+    <body>
+      <script type="text/javascript"></script>
+      <section> 
+        <article>
+            <div class="webbank">
+                <span id="x">Balance</span></br>
+                <div>---------------------------</div>
+                <div> 
+                  <div style=color:green>Account Number: {{hbsdata.no}}</div></br>
+                  <div style=color:green>Account Type: {{hbsdata.mode}}</div></br>
+                  <div style=color:green>Account Balance: $ {{hbsdata.balance}}</div></br>
+                <form method = "POST" id="balanceForm" action="">
+                    <button id= "btn" class="btnSubmit" onclick="myCancel('b')">Cancel</button>
+                </form>
+              </div>
+            </div>
+        </article>
+      </section>
+    </body>
+  </html>

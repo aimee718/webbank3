@@ -1,0 +1,24 @@
+{
+  "name": "webbank2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server.js"
+  },
+  "author": "aimee lee",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.0.0",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "session-file-store": "^1.4.0"
+  },
+  "engine": {
+    "node" : "12.14.1",
+    "npm" : "6.13.4"
+  }
+}

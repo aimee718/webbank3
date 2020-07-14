@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta gttp-equiv="X-UA-Compatible" content="IE=edge"/>  
+      <title>Web Bank</title>
+      <link rel="stylesheet" type="text/css" href="./css/bankStyle.css" />
+      <script type="text/javascript" src="./js/banking.js"></script>
+    </head>
+  <body>
+    <script type="text/javascript"></script>
+  <section>
+    <article>
+        <div class="webbank">
+            <span id="x">Withdrawal</span>
+              <div>---------------------------</div>
+            <div>
+              <div id="accWithdrawal" style=color:green value= {{somedata}}>Account Number: {{somedata}}</div>   
+            </div>
+          <form method="POST" id="withdrawalForm" action="">            
+              <input type="text" id="txtwithdrawal" class="txtwithdrawal" name="txtwithdrawal" placeholder="withdrawal"/></br></br>
+              <input type= "hidden" id="txtaccount" class="txtaccount" name="txtaccount"/>
+                <input type= "hidden" id="txtwCancel" class="txtwCancel" name="txtwCancel" value = "w"/>
+              <button id="btn" class="btnSubmit" onclick="myWithdrawal()">Send</button>
+              <button id= "btn" class="btnSubmit" onclick="myCancel('w')">Cancel</button>
+            </form>
+            </br></br></br>
+            <div id="accWithdrawal" style=color:blue value= {{somedata2}}>{{somedata2}}</div>
+        </div>
+    </article>
+  </section>
+  </body>
+</html>

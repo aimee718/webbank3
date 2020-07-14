@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta gttp-equiv="X-UA-Compatible" content="IE=edge"/>  
+      <title>Web Bank</title>
+      <link rel="stylesheet" type="text/css" href="./css/bankStyle.css" />
+      <script type="text/javascript" src="./js/banking.js"></script>
+    </head>
+    <body>
+      <script type="text/javascript"></script>
+      <section>
+        <article>
+            <div class="webbank">
+                <span id="x">Deposit</span>
+                <div>---------------------------</div>
+                <div>           
+                  <div id="accDeposit" style=color:green value= {{somedata}}>{{somedata}}</div>  
+              </div>
+              <form method="POST" id="depositForm" action="">             
+                  <input type="text" id="txtdeposit" class="txtdeposit" name="txtdeposit" placeholder="Deposit"/></br></br>
+                  <input type= "hidden" id="txtaccount" class="txtaccount" name="txtaccount"/>
+                    <input type= "hidden" id="txtwCancel" class="txtwCancel" name="txtwCancel" value= "d"/>
+                  <button id="btn" class="btnSubmit" onclick="myDeposit()">Send</button>
+                    <button id= "btn" class="btnSubmit" onclick="myCancel('d')">Cancel</button>
+                </form>
+            </div>
+        </article>
+      </section>
+    </body>
+  </html>

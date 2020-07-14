@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta gttp-equiv="X-UA-Compatible" content="IE=edge"/>  
+      <title>Web Bank</title>
+      <link rel="stylesheet" type="text/css" href="./css/bankStyle.css" />
+      <script type="text/javascript" src="./js/banking.js"></script>
+    </head>
+    <body>
+      <script type="text/javascript"></script>
+      <section>
+        <article>
+            <div class="webbank">
+                <span id="x">Open Account</span>
+                <form method="POST" id="accountForm" action=""> 
+                  <input type="text" id="txtaccount" class="txtaccount" name="txtaccount" placeholder="Account Number"/></br></br>
+                  <input type="hidden" id="rd_type" name="rd_type" value="">
+                  <input type="radio" id="txtchq" name="acctype" value="Chequing" onclick="myType(this.value)">
+                  <label for="txtchq">Chequing</label></br></br>
+
+                  <input type="radio" id="txtsave" name="acctype" value="Savings" onclick="myType(this.value)">
+                  <label for="txtsave">Savings</label></br></br></br>
+                  <button id= "btnSubmit2" class="btnSubmit2"  name="submit" onclick="myOpenAccount()" value="Submit2" >Submit</button>
+                  <button class="btnSubmit" onclick="myCancel('a')">Cancel</button>
+                </form>
+            </div>
+        </article>
+      </section>
+    </body>
+  </html>
