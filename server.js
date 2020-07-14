@@ -59,7 +59,7 @@ app.post("/", (req,res)=>{
             if(logindata[inputusername] == inputpassword){
                 console.log(`auth $logindata[inputusername]`);
                 if(!req.session.logined) 
-                res.render("main",{data:inputusername});
+                res.render("https://webbank-2.herokuapp.com/main",{data:inputusername});
                 //res.send("hello world");
 
             }else if(!logindata[inputusername] ){
